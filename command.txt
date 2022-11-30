@@ -1,0 +1,16 @@
+If we have a lot of JavaScript code, we can put it into a separate file.
+
+Script files are attached to HTML with the src attribute:
+
+<script src="/path/to/script.js"></script>
+
+-----
+We can have as many statements in our code as we want. Statements can be separated with a semicolon.
+
+For example, here we split “Hello World” into two alerts:
+alert('Hello'); alert('World');
+
+[must use -- ; -- before]
+for multiple alert messeage use >> .forEach
+alert('Hello');[1,2,3].forEach(alert)
+
