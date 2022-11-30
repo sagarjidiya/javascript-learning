@@ -20,6 +20,7 @@ console.log(firstName);
 let value1="2"
 console.log(value1 ** 3)
 
+
 //use constants
 //in use of const we can never change value
 
