@@ -41,6 +41,7 @@ console.log(about);
 
 // ----------
 // print "hel'lo" otherwise use "he\"lo"  \"
+
 let xy= "hel'lo"
 console.log(xy);
 
