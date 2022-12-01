@@ -52,12 +52,13 @@ xy--;
 console.log(xy);
 
 //Comparison & logical operator
+// == Compares the equality of two operands without considering type.
 
 //===(fisrt datatype compare & after value also compare)
 
 //eqal value AND type
 
-5===5     //-> true see 5,5 both num first cond.. true & both eqal to >> true
+5===5     //-> true   see 5,5 both num first cond.. true & both eqal to >> true
 6===5     //-> false
 5==='5'  //-> false
 

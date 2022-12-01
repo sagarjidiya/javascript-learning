@@ -27,6 +27,12 @@ let aGe ="18";
 aGe=Number(aGe);    
 console.log(typeof age);
 
+// convert num to str
+let newNumber= 40;
+newNumber= newNumber+"";
+console.log(typeof newNumber);
+
+
 //string concatenation
 
 let string1= "Java";

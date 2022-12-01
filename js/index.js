@@ -18,7 +18,7 @@ firstName="programming";
 console.log(firstName);
 
 let value1="2"
-console.log(value1 ** 3)
+console.log(value1 ** 3);
 
 
 //use constants
@@ -40,4 +40,12 @@ console.log(value1 ** 3)
 
  newName= "jsscript";
  console.log(newName);
+
+ let secName = "php";
+ console.log(secName);
+
+ secName= "python";
+ console.log(typeof secName);
+
+
  

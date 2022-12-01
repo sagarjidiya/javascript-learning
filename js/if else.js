@@ -12,7 +12,7 @@ if(){
 /* for others messeage
 if(){
 
-}else if{
+}else if(){
 
 }else{
     
@@ -20,7 +20,7 @@ if(){
 
 
 let age = 19;
-let hasWotercard = 'yes'
+let hasWotercard = 'no'
 
 if(age>=15 && hasWotercard == 'yes'){
 
@@ -33,7 +33,7 @@ else {
     alert('You can not vote !')
 }
 
-// age is valid but no wotercard we can use other else if for m get card
+// age is valid but no wotercard we can use other else if for message get card
 
 
 // for nested if
@@ -73,6 +73,7 @@ let option= isLoggedin==1 ? "logout" : "login";
      document.write(option);
 
     //  --- after login user undefine rahe--
+    // ?? same work or ||
 
     let user;
 

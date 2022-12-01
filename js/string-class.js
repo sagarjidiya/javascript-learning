@@ -11,6 +11,12 @@ console.log(firstName.length);
 
 firstName= firstName.trim();
 console.log(firstName.length);
+ 
+let newName= "         php          "
+console.log(newName.length);
+
+newName= newName.trim();
+console.log(newName.length);
 
 //for uppercase
 console.log(firstName.toLocaleUpperCase());
