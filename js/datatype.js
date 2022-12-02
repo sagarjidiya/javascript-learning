@@ -22,6 +22,10 @@ console.log(typeof(age));
 let myStr=+"34"
 console.log(typeof myStr);
 
+let xyName= "new"
+// xyName = +xyName + ;
+console.log(typeof xyName);
+
 //num to str
 let aGe ="18";
 aGe=Number(aGe);    
@@ -32,24 +36,13 @@ let newNumber= 40;
 newNumber= newNumber+"";
 console.log(typeof newNumber);
 
-
-//string concatenation
-
-let string1= "Java";
-let string2= "script";
-
-let newString= string1 + " " +string2;   
-console.log(newString); //Java script
+let bNumber=10;
+bNumber= bNumber+"";
+console.log(typeof bNumber);
 
 //use backtis &$
 let about= ` my name is ${firstName} age is ${age}`
 console.log(about);
-
-// ----------
-// print "hel'lo" otherwise use "he\"lo"  \"
-
-let xy= "hel'lo"
-console.log(xy);
 
 //boolean datatype >> Booleans can have two values: true or false
 

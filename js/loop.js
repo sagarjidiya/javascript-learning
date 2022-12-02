@@ -157,7 +157,7 @@ for(let bCounter=1; bCounter<=10; bCounter++){
 /* first label write outer: before main for loop
  for this label use after break*/
 
-outer: for(aCounter=1; aCounter <=10; aCounter++){
+outer: for(let aCounter=1; aCounter <=10; aCounter++){
 
     // if(aCounter==5){
     //     continue;
@@ -165,8 +165,8 @@ outer: for(aCounter=1; aCounter <=10; aCounter++){
     
     document.write(aCounter, "<br/>");
 
-    //nested loop
-    for(aCounter2=1; aCounter2 <4; aCounter2++){
+    //nested loopf
+    for(let aCounter2=1; aCounter2 <3; aCounter2++){
 
         if(aCounter==5){
             break outer;
@@ -175,4 +175,18 @@ outer: for(aCounter=1; aCounter <=10; aCounter++){
         document.write("js script", "<br/>");
     }
 
+}
+
+for(let xyCounter=10; xyCounter<=20; xyCounter++){
+    document.write(xyCounter,"</br>");
+
+
+    for(let yxCounter=1; yxCounter<2; yxCounter++){
+
+        if(xyCounter==14){
+            continue;
+        }
+        document.write("count num")
+
+    }
 }

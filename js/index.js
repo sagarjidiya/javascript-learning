@@ -30,11 +30,6 @@ console.log(value1 ** 3);
 // first1= "200"
 //  console.log(first1);
 
- //string indexing
-
- let langname="javascript";
- console.log (langname[0]);
-
  let newName="script";
  console.log(newName);
 
