@@ -96,7 +96,7 @@ condition check <=10; > docu.write > var++ nahi jayega
 after sec time work >> first var++ (count++) increase karega >> after condi..value check
 } */
 
-
+ 
 for(let sCounter=1; sCounter<=10; sCounter++){
     document.write("CSS"+ "<br/>");
 }
@@ -172,7 +172,7 @@ outer: for(let aCounter=1; aCounter <=10; aCounter++){
             break outer;
         }
 
-        document.write("js script", "<br/>");
+        document.write("js  ", "<br/>");
     }
 
 }

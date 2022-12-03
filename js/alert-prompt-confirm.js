@@ -22,7 +22,7 @@ alert('Hello');[1,2,3].forEach(alert)
 */
 let age= prompt('How old are you', 20);
 alert (`you are ${age} year old`);
-
+// ------------------------------------------------------
 let age2= prompt('Enter your age');
 
 if(age2!=null){ 
