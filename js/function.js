@@ -96,5 +96,45 @@
 
     add();
 
+    //----------Anonymous Function------------ 
+
+    //in anonmous function does not have any name
+    // anonmous function assign with variabe
+
+    //Function expression
+    let show= function (){
+        console.log("Hello Js");
+    };
+
+    show();      //call func..
+
+    // why use this function?
+    //any function execute for one time we can use --Anonymous Function
+    //and also use another function in parameter > passed this function
+
+    // setTimeout(function name, time);
+
+    // function show1(){
+    //     console.log("js script")
+    // }
+    // this function is call after 3 sec >  we can use setTimeout
+
+    // setTimeout(function (){
+    //     console.log("js script");
+    // }, 3000)   //3s > 3000 ml sec
+
+    // ---- Immediately invoked function-----
+    // first all function close in ( all function (){} ) (); < immediate invoked
+    //function make and execute also in one
+
+    (function (){
+        console.log("js function");
+        alert("js function");
+    }) ();
+
+
+
+
+
 
 

@@ -1,7 +1,7 @@
 // Use three function to convert string1, number & array
 // String()
 // Number()
-// String()
+// Boolean()
 
 /*---------    String()   -----------    */
 //num to string

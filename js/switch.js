@@ -24,7 +24,7 @@ if input 0, "n", "no" output > end*/
     //Switch
     //comparison ===
 
-    /*  switch(compare variable name){
+    /*  switch(compare variable name :){
         case >> after ,name jisko compare karna hai :
         break; (after case,compalsory write break;)    
     }  */

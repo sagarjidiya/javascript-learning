@@ -34,7 +34,7 @@ console.log(a+b);  //55
 
 let j= "java"
 let k= "script"
-console.log(j+ " " +k);
+console.log(j+ " " +k); //use also concat()
 
 // x++ & x--
 //element me badhana hai x++ otherwise x--

@@ -47,7 +47,7 @@
 // book.shift();
 // console.log(book);
 
-//Any value remove var name.splice()
+//Any value remove in array var name.splice()
 // var name.splice(position num)
 
 let book= ["Maths", "English", 9, " Physics"];

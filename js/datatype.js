@@ -1,13 +1,13 @@
 //Data type
 
-//type of operator
+//type of datatype
 //string
 //number
 //booleans
 //undefind
 //null
 //BigInit
-//Symbool
+//Symbol
 
 let age= "10";
 let firstName= "ram";
