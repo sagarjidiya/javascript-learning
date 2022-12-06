@@ -99,7 +99,7 @@
     //----------Anonymous Function------------ 
 
     //in anonmous function does not have any name
-    // anonmous function assign with variabe
+    // anonmous function assign with variable
 
     //Function expression
     let show= function (){
@@ -119,9 +119,9 @@
     // }
     // this function is call after 3 sec >  we can use setTimeout
 
-    // setTimeout(function (){
-    //     console.log("js script");
-    // }, 3000)   //3s > 3000 ml sec
+    setTimeout(function (){
+        console.log("js script");
+    }, 3000)   //3s > 3000 ml sec
 
     // ---- Immediately invoked function-----
     // first all function close in ( all function (){} ) (); < immediate invoked

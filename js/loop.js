@@ -61,16 +61,6 @@ while(newCounter <=100){
 }
 document.write(sum);
 
-// let newCounter =1;
- 
-// while(newCounter <=100){
-//     if(newCounter % 2==0){
-
-//         sum=sum+newCounter;
-//     }
-//     newCounter++;
-// }
-// document.write(sum);
 // newCounter++ ab counter 2 se 3 hoga condition check if>> false >> odd num
 
 // -------------------------------------------------------------------
