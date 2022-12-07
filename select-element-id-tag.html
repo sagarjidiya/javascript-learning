@@ -4,16 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select element by id tag</title>
+    <title>Select element by id-class-tag-query</title>
 </head>
 <body>
     
-    <ul>
-        <li class="text-red"> item 1</li>
+    <!-- <ul>
+        <li class="text-red bg-dark"> item 1</li>
         <li id="second"> item 2</li>
-        <li class="text-red"> item 3</li>
+        <li class="text-red bg-dark"> item 3</li>
+    </ul> -->
+
+    //for use element by tag
+
+    <h2>heading 1</h2>
+    <p class="paragraph">paragraph 1</p>
+    <div id="div1">
+
+        <h2>heading 2</h2>
+        <p class="paragraph">paragraph 2</p>
+        <h2>heading 3</h2>
+        <p class="paragraph">paragraph 3</p>
+        
+    </div> 
+
+    <!-- for traversing element -->
+
+    <ul>
+        <li id="first">list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+    <ul id="list-a">
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li>
+        <li>list d</li>
     </ul>
 
-    <script src="js/select-element-id-tag.js"></script>
+    <!-- for sibling select ele/ -->
+
+    <ul>
+        <li>list x</li>
+        <li id="list-y">list y</li>
+        <li>list z</li>
+    </ul>
+
+    <!-- __________________ Create & Append Element_______________________ -->
+
+
+    <div id="text-white">
+        <p id="p-tag">this is p tag</p>
+    </div>
+
+    <ul id="book">
+        <li>book1</li>
+        <li>book2</li>
+        <li>book3</li>
+    </ul>
+
+    <ul id="menu">
+        <li>Home</li>
+        <li>Product</li>
+        <li>Contact</li>
+    </ul>
+
+
+    <script src="js/select-element-id-class-tag.js"></script>
+
 </body>
 </html>
