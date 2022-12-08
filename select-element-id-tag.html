@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select element by id-class-tag-query</title>
+
+    <style>
+    
+    #btn{
+        font-family: sans-serif;
+        border: 1px solid white;
+    }
+
+    .box{
+        border: 1px solid black;
+        padding: 100px;
+    }
+    </style>
 </head>
 <body>
     
@@ -66,8 +79,35 @@
     <ul id="menu">
         <li>Home</li>
         <li>Product</li>
+        <li>about</li>
         <li>Contact</li>
     </ul>
+
+    <!-- --------Replace child--- -->
+
+    
+    <ul id="items-page">
+        <li>Home</li>
+        <li>Product</li>
+        <li>about</li>
+    </ul>
+
+    <!-- -------------- insert Adjacent Html--------------- -->
+      <div id="head">
+
+        <h3>web page</h3>
+        <p>this is paragraph</p>
+    </div>
+
+    <!-- ---------change attribute-------- -->
+
+    <button id="btn" class="txt-red">send</button>
+
+    <!-- -------- get width height------- -->
+    <div class="box">
+
+        <p>this is paragraph</p>
+    </div>
 
 
     <script src="js/select-element-id-class-tag.js"></script>

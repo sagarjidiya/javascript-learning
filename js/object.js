@@ -302,21 +302,7 @@ objects of the same "type".  */
 
     console.log(user.personalInfo.address);
 
-    // -------------- DOM (Document Object Model)------------------
-
-    /*  Dom is a application programming interface (API) 
-
-    FOR Manipulating Html & Xml Document 
-     (add, remove and modifie part of the document/ Html)
-
-     -- When web page is loaded , browser create 
-        document object model of the page --
-
-     --document object represent --> web page
-
-     -- access any elemrnt in html > start access document obj
-
-    */
+    //Dom & select element continue in other js file
 
 
 

@@ -258,6 +258,12 @@ h1.id ="home"
 
     // ---------------------- insert before element-----------------------------
 
+    /* <ul id="book">
+        <li>book1</li>
+        <li>book2</li>
+        <li>book3</li>
+    </ul> */
+
     /*  To insert element before another 
     element, child ele of a parent ele -- use insert before ele */
  
@@ -290,11 +296,12 @@ h1.id ="home"
 
     parent.insertBefore(newHead,idBook) // h3 is upper on li
 
-    // ---------------------- Remove child element----------------------------
+    // ---------------- Remove child element--- .removeChild()----------------
 
     /* <ul id="menu">
     <li>Home</li>
     <li>Product</li>
+    <li>about</li>
     <li>Contact</li>
     </ul> */
 
@@ -304,8 +311,210 @@ h1.id ="home"
 
     menuLi.removeChild(eleLi); //product dele
 
+    //we can delete one more ele| one more .nextElemenetSibling add in select ele
+
     // remove all child
+                                 //parent
     // document.body.removeChild(menuLi);
+
+    // ---------------Clone (copy) Element-- .cloneNode()---------------------
+
+    // Parent & child element copy by using clone
+
+    /* <ul id="menu">
+    <li>Home</li>
+    <li>Product</li>
+    <li>about</li>
+    <li>Contact</li>
+    </ul> */
+
+    let aId= document.getElementById("menu");
+
+    let cloneEle= aId.cloneNode(true);
+
+    console.log(cloneEle);
+
+    /*if you select only parent ele use > id var.cloneNode(false);
+
+    if you select only parent & child ele also use > id var.cloneNode(true); */
+
+    // document.body.appendChild(cloneEle); //one ul item other in body
+
+    cloneEle.id= "books-menu";
+
+    // --------------- Replace Element -- replaceChild()----------------------
+    /*<ul id="items-page">
+        <li>Home</li>
+        <li>Product</li>
+        <li>about</li>
+    </ul>              */
+
+    //xa = parent
+    let xa = document.getElementById("items-page");
+
+    let itemLi= document.createElement("li");
+    itemLi.textContent= "service"
+
+    let replace= xa.firstElementChild.nextElementSibling;
+
+    xa.replaceChild(itemLi,replace); //service li add in product place
+
+// ------------------ insert Adjacent Html-- insertAdjacentHTML()-----
+
+//Add html element in four positon
+// 1. beforebegin 2.afterbegin 3. beforeend 4. afterend
+
+/*syntax
+ parent.insertAdjacentHTML(position, element) */
+
+//-- beforebegin
+/* <div class="head">
+
+      //afterbegin
+
+    <h2>Heading</h2>
+    <p>this is paragraph</p>
+
+    //--beforeend
+
+     </div>   */
+     //--afterend
+
+     let xb = document.getElementById("head");
+
+     let html = "<h3>this is h3<h3/>"
+
+     xb.insertAdjacentHTML("beforebegin",html);
+
+    // ------------------------ Change Attribute .setAttribute()--------------
+
+    // <button id="btn" class="txt-red">send</button>
+
+    // id/class var.setAttribute("Name", "value")
+
+    let btn = document.getElementById("btn")
+
+    btn.setAttribute("name","form");
+
+    //get value attribute -----getAttribute(name)
+
+    let val= btn.getAttribute("id");
+    console.log(val); //btn
+
+    //remove attribute---- removeAttribute(name)
+
+    let dele = btn.removeAttribute("class") //class remove
+
+    // check attribute has in ele / true ,false--- hasAttribute(name)
+
+    let checkAttri = btn.hasAttribute("id");
+    console.log(checkAttri) //true
+
+   // ----------------------- inline style--------------------------
+
+   //<button id="btn" class="txt-red">send</button>
+
+    let btn1= document.getElementById("btn")
+
+    //for multiple style change use cssText
+    btn1.style.cssText = "background-color: black; color:white;"
+
+    //other way apply inline
+   /*  btn1.setAttribute('style', 'color: yellow; background-color:black') 
+
+    btn.style.color= "red"
+*/
+   // ------ Get computed css-- .getComputedStyle(id) -----
+
+  btnId = document.getElementById("btn")
+  let checkStyle = getComputedStyle(btn)
+  console.log(checkStyle.color); //rgb(255, 255, 255)
+
+//   ---------------- Change Classes -----------------------
+
+//<button id="btn" class="txt-red">send</button>
+
+//add class
+  let aClass= document.getElementById("btn")
+
+  //add class
+  aClass.className = "text-center bg-dark"
+  aClass.classList.add("lg-heading"); //other way
+
+  //remove class
+  aClass.classList.remove("text-center")
+
+  //replace class
+  aClass.classList.replace("lg-heading", "md-heading");
+
+  // for class name list
+  console.log(aClass.classList);
+
+  //any class include in ele check >.contains true / false
+  let checkClass = aClass.classList.contains("lg-heading");
+  console.log(checkClass); // false 
+
+  // allredy class include > remove -- class not include >> add
+   aClass.classList.toggle("text-blue");
+
+//    --------------- Get width & height --------------------
+
+// let box = document.getElementsByClassName("box")
+
+// let width = box.offsetWidth;
+// let height = box.offsetHeight;
+
+//offset height width -- border, padding,m also include
+
+let box = document.querySelector('.box');
+let width = box.offsetWidth;
+let height = box.offsetHeight;
+
+console.log(width); //202
+console.log(height); //288
+
+//  client height width -- not include border, m, p
+
+let box1 = document.querySelector('.box');
+let width1 = box1.clientWidth;
+let height1 = box1.clientHeight;
+
+console.log(width1); //200
+console.log(height1); //286
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
