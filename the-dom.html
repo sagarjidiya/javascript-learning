@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom event</title>
+
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(107, 81, 49);
+        }
+
+        body{
+            padding: 100px;
+            background-color: rgb(145, 166, 204);
+        }
+        #mydiv{
+            padding: 50px;
+            background-color: rgba(153, 133, 84, 0.849);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn-pri">Click Me !</button> <br>
+
+    <button id="btn-p">lear more!</button> <br>
+
+    <!-- ---- for page loaded-- -->
+
+    <img src="img/nature.jpg" width="500" id="img1" alt="">
+
+      <!-- ----- mouse event---- -->
+    <div class="box" onmouseup="mouseup()"></div> <br>
+
+    <!-- --- event on form---- -->
+
+    <input type="text" id="form" placeholder="F Name">
+
+    <!-- ----- bubbling & capturing event ---- -->
+
+    <div id="mydiv">
+        <button id="btn">More</button>
+    </div>
+
+    <!-- ----- prevent default()------ -->
+
+    <a href="https://www.google.com" id="link">Click Here..</a>
+    <input type="checkbox" id="checkbox">
+
+
+
+   <script src="js/the-dom.js"></script>
+
+    
+</body>
+</html>
