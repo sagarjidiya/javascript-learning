@@ -68,4 +68,36 @@ Window object created by automatically by browser        */
     console.log(location.hostname)
     console.log(location.protocol) //file:
 
-    
+    //redirect btn
+    // <button id="btn-redirect">Redirect To Google</button>
+
+    function redirect(){
+        // window.location= "https://www.google.com/"
+        // href.location= "https://www.google.com/" //another way redirect
+        location.assign("https://www.google.com/") //store in history
+        location.replace("https://www.google.com/")
+        location.reload() // for refresh
+    }
+
+    // ---------------------- Navigator Object -----------------------
+
+    /* The navigator object contains information about the browser.
+
+    console.log(navigator.appName);       //Netscape
+    console.log(navigator.appVersion);    //Version
+    console.log(navigator.appCodeName);   //Mozilla */
+    console.log(navigator.cookieEnabled);  //true 
+    console.log(navigator.doNotTrack);     //1
+    console.log(navigator.languages);     // en-Us
+
+    //------------------- screen object--------------
+
+    // The screen object contains information about the visitor's screen.
+
+    console.log(screen.availHeight) //728
+    console.log(screen.availWidth) //1366
+    console.log(screen.colorDepth) //24
+    console.log(screen.orientation) //landscape-primary
+
+
+
